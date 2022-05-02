@@ -1,0 +1,33 @@
+.social-section .divider p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.social-section .divider p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-section .divider p span {
+  color: #686de0;
+}
+.social-section .divider p::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: #686de0;
+}
+.social-section .divider p::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: #686de0;
+}
+.social-section button {
+  margin: 5px 0;
+}
+.social-section button img {
+  width: 25px;
+  margin: 0 10px;
+}

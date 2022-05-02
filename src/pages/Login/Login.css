@@ -1,0 +1,42 @@
+.custom-form {
+  max-width: 500px;
+  margin: 100px auto;
+  border: 1px solid #686de0;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.custom-form h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.custom-form label {
+  width: 100%;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.custom-form input {
+  width: 100%;
+  padding: 5px 10px;
+}
+.custom-form button {
+  width: 100%;
+  border: none;
+  background-color: #686de0;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.custom-form button:focus {
+  outline: 2px solid hsla(238, 49%, 57%, 0.651) !important;
+}
+.custom-form p {
+  text-align: center;
+}
+.custom-form p span {
+  color: red;
+  cursor: pointer;
+}
