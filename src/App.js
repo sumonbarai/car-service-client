@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Login/Login";
 import Manage from "./pages/Manage/Manage";
 import NotFound from "./pages/NotFound/NotFound";
+import OrderHistory from "./pages/OrderHistory/OrderHistory";
 import Register from "./pages/Register/Register";
 import RequireAuth from "./pages/RequireAuth/RequireAuth";
 import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
@@ -29,7 +30,7 @@ function App() {
         <Route path="/login" element={<Login></Login>} />
         <Route path="/register" element={<Register></Register>} />
         <Route
-          path="/checkout"
+          path="/checkout/:serviceId"
           element={
             <RequireAuth>
               <ChackOut></ChackOut>
@@ -49,6 +50,14 @@ function App() {
           element={
             <RequireAuth>
               <Addservice></Addservice>
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/orderhistory"
+          element={
+            <RequireAuth>
+              <OrderHistory></OrderHistory>
             </RequireAuth>
           }
         />

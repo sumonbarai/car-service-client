@@ -50,6 +50,13 @@ const Header = () => {
                   <Nav.Link as={Link} className="custom-link" to="/addservice">
                     addservice
                   </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    className="custom-link"
+                    to="/orderhistory"
+                  >
+                    order Hisory
+                  </Nav.Link>
                 </>
               )}
               {user ? (

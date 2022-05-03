@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import useSingleService from "../../hooks/useSingleService";
 
 const ServiceDetails = () => {
   const navigate = useNavigate();
   const { serviceId } = useParams();
+  const [service] = useSingleService(serviceId);
   const handleCheckOut = () => {
-    navigate("/checkout");
+    navigate(`/checkout/${serviceId}`);
   };
-  const [service, setService] = useState({});
-  useEffect(() => {
-    const uri = `http://localhost:5000/service/${serviceId}`;
-    fetch(uri)
-      .then((res) => res.json())
-      .then((data) => setService(data));
-  }, []);
 
   return (
     <div>
